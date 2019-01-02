@@ -17,10 +17,10 @@
 <div class="jumbotron">
     <div class="row">
         <div class="col-3">
-        <form> 
+        <form id="ticketForm"> 
                 <div class="form-group">
-                  <label for="i_severity">Issue severity</label>
-                  <select class="form-control" id="issueSeverity">
+                  <label for="t_severity">Issue severity</label>
+                  <select class="form-control" id="ticketSeverity">
                     <option>Medium</option>
                     <option>Low</option>
                     <option>High</option>
@@ -28,13 +28,13 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="i_description">Issue Description</label>
-                  <textarea placeholder="Please describe the issue as clearly as possible" class="form-control" id="issueDescription" rows="3"></textarea>
+                  <label for="t_description">Issue Description</label>
+                  <textarea placeholder="Please describe the issue as clearly as possible" class="form-control" id="ticketDescription" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
-                        <label for="i_assignedTo">Assigned to who?</label>
-                        <input type="text" class="form-control" id="issueAssigned" placeholder="Who is the issue assigned to?">
+                        <label for="t_assigned">Assigned to who?</label>
+                        <input type="text" class="form-control" id="ticketAssigned" placeholder="Who is the issue assigned to?">
                 </div>
 
                 <button type="button" class="btn btn-outline-secondary">Submit issue</button>
@@ -43,8 +43,15 @@
 
 
         </div>
+
+        <div class="col-9">
+            <div id="allTicket">
+
+            </div>
+        </div>
     </div>
     
 </div>
+<script src="/js/ticket.js"></script>
 </body>
 </html>
